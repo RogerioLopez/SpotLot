@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSE455V2.Views.PaymentPage"
+             Title="Payment Information">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="&#10;" />
+            <Label x:Name="personName"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Black"
+                   FontSize="16"/>
+            <Label x:Name="street"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"
+                   FontSize="16"/>
+            <Label x:Name="city_zip"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"
+                   FontSize="16"/>
+            
+            <Label x:Name="card_name"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"
+                   Margin="0,20,0,0"
+                   FontSize="16"/>
+            <Label x:Name="numbers"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" 
+                   TextColor="Black"
+                   FontSize="16"/>
+            <!-- <Button Text="Edit Payment Information"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="EditPaymentMethod" />
+            <Button Text="Delete Payment Info"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="DeletePaymentInfo" /> -->
+
+            <Button Text="Edit Payment Information" 
+                TextColor="Black"
+                Clicked="EditPaymentMethod" 
+                BorderColor="Black" 
+                BorderWidth="4" 
+                BackgroundColor="LightGray"
+                Margin="0,20,0,0"
+                HeightRequest="100"
+                    WidthRequest="500"
+                    HorizontalOptions="Center">
+            </Button>
+            <Button Text="Delete Payment Information" 
+                TextColor="Black"
+                Clicked="DeletePaymentInfo" 
+                BorderColor="Black" 
+                BorderWidth="4" 
+                BackgroundColor="LightGray"
+                Margin="0,20,0,0"
+                HeightRequest="100"
+                    WidthRequest="500"
+                    HorizontalOptions="Center">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

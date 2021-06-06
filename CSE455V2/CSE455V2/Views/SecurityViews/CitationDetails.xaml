@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSE455V2.Views.SecurityViews.CitationDetails">
+    <ContentPage.Content>
+        <StackLayout Margin="20,30,20,20">
+            <Label x:Name="title"
+                   Text="Citation Details" 
+                   FontSize="Large"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="name"
+                   Text="" 
+                   FontSize="Medium" />
+            <Label x:Name="studentId"
+                   Text=""
+                   FontSize="Medium" />
+            <Label x:Name="vehicleInfo"
+                   Text="" 
+                   FontSize="Medium" />
+            <Label x:Name="lisencePlate"
+                   Text="" 
+                   FontSize="Medium" />
+            <Label x:Name="citationId"
+                   Text="" 
+                   FontSize="Medium" />
+            <Label x:Name="reasonForCitation"
+                   Text="" 
+                   FontSize="Medium"/>
+            <Label x:Name="fineAmount"
+                   Text="" 
+                   FontSize="Medium" />
+            <Label x:Name="paidStatus"
+                   Text=""
+                   FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSE455V2.Views.SecurityViews.SecurityTow">
+    <ContentPage.Content>
+        <StackLayout Margin="20,30,20,20">
+            <Label Text="Request a Tow Truck"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+            <Label Text="*Only Call if NECESSARY*"
+                   TextColor="Red" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   FontSize="Medium" />
+            <Label Text="*All Calls Documented*"
+                   TextColor="Red" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   FontSize="Medium" />
+            <Label Text="FIND USER: "
+                       FontAttributes="Bold" 
+                       FontSize="Large" 
+                       TextColor="Black" />
+
+            <SearchBar x:Name="searchLisencePlate" 
+                           Placeholder="Enter Lisence Plate" 
+                           SearchButtonPressed="searchLisencePlate_SearchButtonPressed"/>
+            <Label Text="USER INFORMATION: "
+                       FontAttributes="Bold" 
+                       FontSize="Large" 
+                       TextColor="Black" />
+            <Entry x:Name="personName"
+                       Placeholder="Name"
+                       Text="{Binding Name}"
+                       FontSize="Small" />
+            <Entry x:Name="vehicleInfo"
+                       Placeholder="Vehicle Information"
+                       Text="{Binding VehicleInformation}"
+                       FontSize="Small" />
+            <Entry x:Name="vinNumber"
+                       Placeholder="VIN Number"
+                       Text="{Binding VinNum}"
+                       FontSize="Small" />
+            <Picker x:Name="citationReason" 
+                        Title="Select A Reason">
+                <Picker.Items>
+                    <x:String>Too Many Violations</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Call for a Tow"
+                    Clicked="CallForATowBtnClicked" 
+                    BackgroundColor="Red" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSE455V2.Views.LoginInfoPage"
+             Title="Login Information"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Email Address:" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="0,45,0,5" />
+            <Entry x:Name="userEmail"
+                   IsReadOnly="True"
+                   BackgroundColor="White"/>
+
+            <Label Text="&#10;" />
+
+            <!-- <Button Text="Change Email Address"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ChangeEmailAddress" />
+            <Button Text="Change Password"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="ChangePassord" /> -->
+            <Button Text="Change Password"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    Clicked="ChangePassword"
+                    Margin="0,20,0,20"
+                    BorderColor="Black" 
+                    BorderWidth="4" 
+                    BackgroundColor="LightGray"
+                    HeightRequest="100"
+                    WidthRequest="500">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
